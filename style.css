@@ -1,0 +1,56 @@
+body {
+    background-color: #242526;
+    font-family: "Montserrat";
+}
+
+.header {
+    color: honeydew;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* THE GRIDS */
+
+.container {
+    display: grid;
+    border: 1px solid gold;
+    height: 500px;
+    width: 500px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    background-color: #393e46;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.change-color {
+    background-color: #18b0b0;
+    
+}
+
+/* THE BUTTONS */
+
+.button {
+    margin: 1em auto;
+}
+
+.btn {
+    background-color: gold;
+    padding: .5em 1em;
+
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid black;
+    transition: all .3s;
+}
+
+.btn:hover {
+    transform: scale(1.3);
+}
